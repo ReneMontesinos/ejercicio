@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/Users/gmont/AndroidStudioProjects/ejercicio1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.5661458333333333" />
         <entry key="..\:/Users/gmont/AndroidStudioProjects/ejercicio1/app/src/main/res/drawable/button_background_blue.xml" value="0.5661458333333333" />
-        <entry key="..\:/Users/gmont/AndroidStudioProjects/ejercicio1/app/src/main/res/layout/activity_main.xml" value="0.55" />
+        <entry key="..\:/Users/gmont/AndroidStudioProjects/ejercicio1/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/gmont/AndroidStudioProjects/ejercicio1/app/src/main/res/layout/activity_mainscreen.xml" value="0.328125" />
         <entry key="..\:/Users/gmont/AndroidStudioProjects/ejercicio1/app/src/main/res/layout/sliderLayout.xml" value="0.5" />
         <entry key="..\:/Users/gmont/AndroidStudioProjects/ejercicio1/app/src/main/res/layout/slider_layout.xml" value="0.25" />
       </map>

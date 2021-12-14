@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="whiteTextColor">#fff</color>
 
+
+    //indicator color
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#50C2C9</color>
 </resources>
