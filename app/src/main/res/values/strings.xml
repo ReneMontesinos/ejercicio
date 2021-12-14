@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ejercicio1</string>
+    <string name="heading_one">Magic CLoud</string>
+    <string name="heading_two">Truly Safe</string>
+    <string name="heading_three">Organised</string>
+
+    <string name="desc_one">Your free unlimited cloud storage</string>
+    <string name="desc_two">Tou don´t have to worry about losing your data </string>
+    <string name="desc_three">Your best choice for organizing all shorts of files</string>
+
+</resources>
