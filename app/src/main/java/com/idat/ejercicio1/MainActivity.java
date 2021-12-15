@@ -1,13 +1,18 @@
 package com.idat.ejercicio1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -15,11 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
     ViewPager mSLideViewPager;
     LinearLayout mDotLayout;
-    Button skipbtn;
+    Button skipbtn, getStartedBtn;
 
     TextView[] dots;
 
+    ImageView imageView;
 
+    ConstraintLayout constraintLayout;
     ViewPagerAdapter viewPagerAdapter;
 
     @Override
@@ -28,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         skipbtn = findViewById(R.id.skipButton);
+        getStartedBtn = findViewById(R.id.starter_btn);
 
 
 
@@ -39,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
             finish();
 
         });
+
+        getStartedBtn.setOnClickListener(v -> {
+             Intent i = new Intent(MainActivity.this, MainScreen.class);
+             startActivity(i);
+             finish();
+        });
+
 
         mSLideViewPager =  findViewById(R.id.slideViewPager);
         mDotLayout =  findViewById(R.id.indicator_layout);
@@ -68,6 +83,16 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        constraintLayout = findViewById(R.id.constraintLayout);
+    if ( position == 1 ) {
+        constraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.coral));
+
+    }else {
+        constraintLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.white));
+    }
+
+
+
         dots[position].setTextColor(getResources().getColor(R.color.black,getApplicationContext().getTheme()));
 
     }
@@ -80,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onPageSelected(int position) {
 
+            if (position == 1) {
+
+
+            }
             setUpindicator(position);
 
         }

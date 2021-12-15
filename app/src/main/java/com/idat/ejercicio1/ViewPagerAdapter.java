@@ -62,7 +62,14 @@ public class ViewPagerAdapter extends PagerAdapter {
         TextView slideHeading = (TextView) view.findViewById(R.id.textTitle);
         TextView slideDesciption = (TextView) view.findViewById(R.id.textDescription);
 
+
         slidetitleimage.setImageResource(images[position]);
+        if (position == 1) {
+            slidetitleimage.setRotation(0);
+        }
+        if (position == 2) {
+            slidetitleimage.setRotation(-25);
+        }
         slideHeading.setText(headings[position]);
         slideDesciption.setText(description[position]);
 

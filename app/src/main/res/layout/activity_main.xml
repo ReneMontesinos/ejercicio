@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/constraintLayout">
 
     <Button
         android:id="@+id/skipButton"
@@ -40,7 +41,7 @@
         app:layout_constraintStart_toStartOf="@+id/slideViewPager" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_button"
+        android:id="@+id/starter_btn"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="191dp"
         android:layout_height="65dp"
